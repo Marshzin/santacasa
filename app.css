@@ -1,0 +1,257 @@
+/* Estilos login */
+
+.login {
+  height: 100vh;
+  background: #d7eaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logoLogin {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.setor {
+  font-size: 24px;
+  color: #346bbd;
+  margin-bottom: 30px;
+}
+.loginButton {
+  padding: 12px 28px;
+  font-size: 18px;
+  background: #7AB8FF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Dashboard e conteúdo */
+
+.dashboard {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.header {
+  background: #7AB8FF;
+  color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logoHeader {
+  width: 60px;
+}
+.title {
+  font-size: 26px;
+  font-weight: bold;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.tab {
+  padding: 10px 24px;
+  background-color: #b3d1ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: #346bbd;
+}
+.tabActive {
+  padding: 10px 24px;
+  background-color: #346bbd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fullWidth {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #346bbd;
+}
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #add8ff;
+  font-size: 16px;
+}
+.button {
+  padding: 12px;
+  background-color: #7AB8FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.cancelButton {
+  background-color: #999;
+}
+.buttonSmall {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  background-color: #7AB8FF;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.printButton {
+  padding: 8px 16px;
+  background-color: #346bbd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.deleteButton {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.updateButton {
+  padding: 6px 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.dxContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dxInput {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #add8ff;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.pacientes {
+  margin-top: 10px;
+}
+.card {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.subtitle {
+  margin-bottom: 12px;
+  color: #346bbd;
+}
+
+/* ===== Responsividade para celulares ===== */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+  }
+  .logoHeader {
+    width: 40px;
+  }
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .tab,
+  .tabActive {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .content {
+    margin: 15px 10px 30px;
+    padding: 15px;
+    max-width: 100%;
+  }
+  .form {
+    gap: 15px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .col {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .dxContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .pacientes {
+    margin-top: 10px;
+  }
+  .card {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .updateButton,
+  .deleteButton {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
